@@ -38,7 +38,7 @@ job = "Physician's Assistant"  # recommended to use double quotes for strings
 # len() → returns the number of characters in a string
 print(len("Hello"))
 
-# upper and lower → conver the string to appropriate case
+# upper and lower → convert the string to appropriate case
 print("hello".upper())
 
 # String concatenation - adding up strings
@@ -50,7 +50,7 @@ print(first_name + last_name + ":" + " " + str(age))
 
 #String multiplication - can multiply a string with an int
 print("hello"*3)
-'''
+
 
 # Accessing string characters - a string is just a sequence of characters
 name = "Jane Doe"
@@ -59,7 +59,53 @@ print(name[2])  # equals n
 
 # Retrieving the character at a given index
 print(name.index('o'))  # equals 6
-print(name.index('e'))  # returns the index of first occurence
+print(name.index('e'))  # returns the index of first occurrence
+
+
+
+######### STRING SLICING #########
+
+emp_name = "Jane Doe"
+print(emp_name[2:6])  # Ending index is not included
+print(emp_name[0:4])
+print(emp_name[:4])
+print(emp_name[3:])
+print(emp_name[-4:-1]) ## Backwards
+print(emp_name[1:6:2])  ##  Starting Index, Ending Index, Step
+print(emp_name.count("e"))  ## Counts how many times Character appears in a string
+print(emp_name.find("Doe"))  ## Position where substring is located (starts from)
+print(emp_name.replace("Jane", "John"))  ## Temporarily replaces substring
+print(emp_name)
+
+emp_name=emp_name.replace("Jane", "John")  ## Permanently replaces substring
+print(emp_name)
+
+print("oh" in emp_name) ## Checks if "in" is included in emp_name
+'''
+### STRING FORMATTING ###
+
+student_name = "Alex"
+score = 74
+
+
+print("Name: " + student_name+ " " + "Score: " +str(score))
+print("Name: {} Score: {}" .format(student_name,score))  ## {} are place holders , {} and variables must be equal
+
+
+### F-STRINGS ###
+
+print(f"Name: {student_name} Score: {score}")
+print(f"3 times 10 is equal to {3*10}")  ## Total cost: {products * price per product}
+
+
+
+
+
+
+
+
+
+
 
 
 
