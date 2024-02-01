@@ -118,40 +118,39 @@ Last_Name = input("Please enter your last name: ")
 Age = input("Please enter your age: ")
 SSN = input("Please enter your SSN: ")
 height_cm = input("What is your height? (cm): ")
-weight_kg = input("What is your weight? (kg): ")
+weight_kg = input("What is your weight? (lbs): ")
 
 SSN_1 = SSN[0:3]
 SSN_2 = SSN[3:6]
 SSN_3 = SSN[6:10]
 
-print(SSN_1)
-print(SSN_2)
-print(SSN_3)
+#print(SSN_1)
+#print(SSN_2)
+#print(SSN_3)
 
 SSN = (SSN_1 + SSN_2 + SSN_3)
-print(SSN)
+#print(SSN)
 
 height_inch_f = float(height_cm)
 Height = int((height_inch_f) // 2.54)
-print(Height)
-print(type(Height))
+#print(Height)
+#print(type(Height))
 
 weight_kg_f = float(weight_kg)
 Weight = int((weight_kg_f) * 0.453592)
-print(Weight)
-print(type(Weight))
-
-print(f"Hello {First_Name} {Last_Name}! Thank you for applying. Please find your details below.")
-print(f" Age: {Age}")
-print(f" SSN: {SSN_1}-{SSN_2}-{SSN_3}")
-print(f" Height: {Height} inches")
-print(f" Weight: {Weight} kgs")
+#print(Weight)
+#print(type(Weight))
 
 print(f"Hello {First_Name} {Last_Name}! Thank you for applying. Please find your details below. \n"
       f"Age: {Age} \n"
       f"SSN: {SSN_1}-{SSN_2}-{SSN_3} \n"
       f"Height: {Height} inches \n"
       f"Weight: {Weight} kgs")
+
+print(type(Height))
+print(type(Weight))
+
+
 
 
 
