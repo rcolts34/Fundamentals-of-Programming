@@ -121,8 +121,8 @@ height_cm = input("What is your height? (cm): ")
 weight_kg = input("What is your weight? (lbs): ")
 
 SSN_1 = SSN[0:3]
-SSN_2 = SSN[3:6]
-SSN_3 = SSN[6:10]
+SSN_2 = SSN[3:5]
+SSN_3 = SSN[5:9]
 
 #print(SSN_1)
 #print(SSN_2)
