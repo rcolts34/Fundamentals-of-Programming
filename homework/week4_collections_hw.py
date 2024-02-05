@@ -70,12 +70,15 @@ set2 = {30, 40, 50, 60, 70}
 new_set = set1.union(set2)
 print(new_set)
 
-'''
 
 
-#6. Create a new list by picking the odd-index items from the first list and even indexed items from the second list.
+# 6. Create a new list by picking the odd-index items from the first list and even indexed items from the second list.
 
+# a. Extract odd index values from list1 by using an index range of (1:"empty").  This will start with index 1 and include the rest of the values.  Adding another range value of 2 will select every-other index (thus, 1,3,5,etc).
 
+# b. Extract even index values from list2 the same way odd index values were extracted from list1 (start with index 0 instead of 1).
+
+# c. Create the new list by joining the two extracted lists together (list.extend).
 
 list1 = [3, 6, 9, 12, 15, 18, 21]
 list2 = [4, 8, 12, 16, 20, 24, 28]
@@ -88,6 +91,15 @@ print(list2_even)
 list.extend(list1_odd,list2_even)
 new_list = list1_odd
 print(new_list)
+
+'''
+
+# 7. Consider list1 = [34, 54, 67, 89, 11, 43, 94]. Write a program to:
+#       a. remove the item present at index 4
+#       b. add it to the 3rd position and at the end of the list.
+
+list1 = [34, 54, 67, 89, 11, 43, 94]
+
 
 
 
