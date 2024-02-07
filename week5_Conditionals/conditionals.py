@@ -83,13 +83,37 @@ else:
 
 grade = int(input("Enter your grade: "))
 
-if grade < 60:
+if grade <= 100 and grade >= 97:
+    print("A+")
+elif grade <= 96 and grade >= 94:
+    print("A")
+elif grade <= 93 and grade >= 90:
+    print("A-")
+elif grade <= 89 and grade >= 87:
+    print("B+")
+elif grade <= 86 and grade >= 84:
+    print("B")
+elif grade <= 83 and grade >= 80:
+    print("B-")
+elif grade <= 79 and grade >= 77:
+    print("C+")
+elif grade <= 76 and grade >= 74:
+    print("C")
+elif grade <= 73 and grade >= 70:
+    print("C-")
+elif grade <= 69 and grade >= 67:
+    print("D+")
+elif grade <= 66 and grade >= 64:
+    print("D")
+elif grade <= 63 and grade >= 60:
+    print("D-")
+else:
     print("F")
 
-if grade < 70:
-    print
-    elif grade <= 89 and grade >= 87:
-    print("B+")
+
+
+
+
 
 
 
