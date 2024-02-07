@@ -174,6 +174,20 @@ list2.sort(reverse=True)
 print(list2)
 
 
+#11. Print the value of key ‘history’ in the below dictionary
+
+dict1 = {
+    "course": {
+        "student": {
+            "name": "Mike",
+            "marks": {
+                "physics": 70,
+                "history": 80
+            }
+        }
+    }
+}
+
 
 
 
