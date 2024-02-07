@@ -95,6 +95,6 @@ print("Welcome to Treasure Island. Your mission is to find the treasure")
 left_right = input("Choose a direction. left or right?: ")
 
 if left_right = "left"
-    print(
+
 
 
