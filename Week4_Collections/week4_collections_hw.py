@@ -92,14 +92,103 @@ list.extend(list1_odd,list2_even)
 new_list = list1_odd
 print(new_list)
 
-'''
 
 # 7. Consider list1 = [34, 54, 67, 89, 11, 43, 94]. Write a program to:
-#       a. remove the item present at index 4
-#       b. add it to the 3rd position and at the end of the list.
+
+    ###       a. remove the item present at index 4
+    ###       b. add it to the 3rd position and at the end of the list.
+
+# a. Identify the value located at index 4 (11)
+# b. Remove the value located at index 4
+# c. Use insert to add it to the 3rd position in the list
+# d. use append to add it to the end of the list.
 
 list1 = [34, 54, 67, 89, 11, 43, 94]
-print(list1.index(4))
+print(list1)
+print(list1[4])
+list1.remove(11)
+print(list1)
+list1.insert(3,11)
+print(list1)
+list1.append(11)
+print(list1)
+
+
+
+# 8. Write a program to add item 7000 after 6000 in the following Python List
+
+# a. "Peel" list1 by setting each nested list to a variable
+# b. Add 7000 after 6000 to list3
+# c. Remove original list3 values from list2
+# d. Insert new list3
+# e. Remove original list2 values from list1
+# f. Insert new list2
+
+list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+list2 = [300, 400, [5000, 6000], 500]
+list3 = [5000, 6000]
+
+list3.append(7000)
+print(list3)
+
+list2.remove([5000, 6000])
+print(list2)
+list2.insert(2, list3)
+print(list2)
+
+list1.remove([300, 400, [5000, 6000], 500])
+print(list1)
+list1.insert(2, list2)
+print(list1)
+
+#### Alternatively, append 7000 after the 2nd nested list (5000,6000)
+
+list1[2][2].append(7000)
+print(list1)
+
+
+
+# 9. Extend list1 by adding the sub list list2.
+
+    # a. Find the Position of sublist [f,g]
+    # b. Extend sublist [f,g] with list2
+
+list1 = ["a", "b", ["c",["d", "e", ["f","g"], "k"], "l"], "m", "n"]
+
+list2 = ["h", "i", "j"]
+
+list1[2][1][2].extend(list2)
+print(list1)
+
+'''
+
+
+
+#10. Reverse the given tuple.
+
+tuple2 = (40, 19, 234, 12, 10, 123)
+
+list2 = list(tuple2)
+print(type(list2))
+list2.sort(reverse=True)
+print(list2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

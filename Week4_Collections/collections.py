@@ -115,7 +115,7 @@ print(courses.intersection(courses1))
 
 print(courses.difference(courses1))
 print(courses1.difference(courses))
-'''
+
 
 ###### DICTIONARIES - collection of key value pairs ##########
 
@@ -163,15 +163,6 @@ employee_dict = [
 print(employee2['skills'][1])
 
 
-
-
-
-
-
-
-
-
-
 # set1 = ()
 #dict1 = {}
 
@@ -196,10 +187,11 @@ print(employee2['skills'][1])
 #set1 = {314, 219, 134}
 #print(set1[1])
 
-
+'''
 
 ### convert a list or a tuple to a set
 
 list2 = [21, 4, 10, 13, 78, 4, 21]
+print(type(list2))
 set2 = set(list2) # also poss a tuple
 print(set2)
