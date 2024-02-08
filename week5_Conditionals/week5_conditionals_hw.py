@@ -25,6 +25,16 @@ num = int(input("Enter a digit between 0 and 9: "))
 
 print(dict1[num])
 
+'''
+
+### Method 2: Using a list
+
+list1 = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+
+num = int(input("Enter a digit between 0 and 9: "))
+
+print(list1[num])
+
 
 
 ###### QUESTION 2: ROCK, PAPER, SCISSORS
@@ -87,7 +97,7 @@ if year%4 == 0:
 else:
     print("Not Leap Year")
 
-'''
+
 
 # 4. Write a program that simulates the logic shown in the below flowchart
 
@@ -115,4 +125,6 @@ else:
     result = "You Fell into a hole. Game Over."
 
 print(f"You chose to go {left_right}, then {swim_wait}, and went through the {door_opt} door. {result} ")
+
+
 
