@@ -1,4 +1,5 @@
 ###### QUESTION 1 = Convert digit to word
+
 ## Brute Force Approach - Using if-elifs
 ## Better approach - using collections
 
@@ -92,9 +93,26 @@ else:
 
 print("Welcome to Treasure Island. Your mission is to find the treasure")
 
+result = ""
+
 left_right = input("Choose a direction. left or right?: ")
+swim_wait = input(("Choose an option. swim or wait?: "))
+door_opt = input(("Choose a door. red, yellow, or blue?: "))
 
-if left_right = "left"
+if left_right == "left":
+    if swim_wait == "wait":
+        if door_opt == "yellow":
+            result = "You Win!"
+        elif door_opt == "red":
+            result = "You Were Burned by fire. Game Over"
+        elif door_opt == "blue":
+            result = "You Were Eaten by beasts. Game Over."
+        else:
+            result = "Game Over."
+    else:
+        result = "You Were Attacked by trout. Game Over."
+else:
+    result = "You Fell into a hole. Game Over."
 
-
+print(f"You chose to go {left_right}, then {swim_wait}, and went through the {door_opt} door. {result} ")
 

@@ -110,7 +110,7 @@ new_input_str = input_str.replace(char_4,"r")
 print(new_input_str)
 
 
-'''
+
 ###### 2.Take user input for first name, last name, age, ssn, height and weight and store them in corresponding variables. Use f-strings syntax to print below message to the console. ########
 
 First_Name = input("Please enter your first name: ")
@@ -150,8 +150,36 @@ print(f"Hello {First_Name} {Last_Name}! Thank you for applying. Please find your
 print(type(Height))
 print(type(Weight))
 
+'''
+
+# 3. Consider the below quote:
+
+# “You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. -Dr. Seuss”
+
+# a. Slice out the phrase “steer yourself any direction you choose.
+
+    # aa. Determine the starting position of "steer" (67)
+    # bb. Determine the starting position of "choose" (100)
+    # cc. Add 7 to the starting position of "choose" (7 characters long including .)
+    # dd. Use these indices to slice out the phrase
 
 
+quote = "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. -Dr. Seuss"
+
+print(quote.index("steer"))
+print(quote.index("choose"))
+print(quote[67:107])
+
+# b. Check if the quote contains the word “feet”
+
+print("feet" in quote)
+
+# c. Replace “Dr. Seuss” with “Dr. Seuss, Oh, the Places You’ll Go!” and print the final string.
+
+    # aa. use variable.replace
+
+quote = quote.replace("-Dr. Seuss", "-Dr. Seuss, Oh, the Places You'll Go!")
+print(quote)
 
 
 
