@@ -7,6 +7,11 @@
 
 '''
 
+
+ # Create a dictionary that includes string versions of numbers
+ # Ask user for input and set to variable
+ # Use input to select string version of input from dictionary
+
 dict1 = {
     0: "zero",
     1: "one",
@@ -25,9 +30,12 @@ num = int(input("Enter a digit between 0 and 9: "))
 
 print(dict1[num])
 
-
-
 ### Method 2: Using a list
+
+ # Create a list that includes string versions of numbers
+ # Ask user for input and set to variable
+ # Use input to select string version of input from dictionary
+
 
 list1 = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
 
@@ -38,6 +46,23 @@ print(list1[num])
 
 
 ###### QUESTION 2: ROCK, PAPER, SCISSORS
+
+# Program requires use of the 'random' module
+# Import the random module
+# Set user input to variable
+# Computer opponents moves are decided by a random number.  Generate a random number and set it to a variable.  Random number generated goes to many decimal places.  Round random number to 2 decimal places.
+# Create placeholder variable for computer move so that it can be referenced in program
+# Only three possible moves in Rock Paper Scissors game.  Since only one random number is being generated, divide it into thirds (random number is from 0 to 1)
+# Set each third to a different outcome:  <  1/3         →   rock
+                                          >= 1/3 < 2/3   →   paper
+    Anything else (only >= 2/3 remains)                  →   scissors
+
+# Define rules of game:    If user and computer pick same = tie
+                           If user chooses rock and computer chooses paper →  computer wins
+                                If computer chooses anything else          →  user wins
+                           Apply same logic to user choice of paper and scissors
+# Use f-strings to print result of game
+
 
 import random
 
@@ -80,6 +105,13 @@ print(f"You Picked {user_move}. Computer picked {comp_move}. {result}")
 
 # 3. Write a program that takes year as input and checks whether the given year is leap or not.
 
+# Set user input to a variable
+# The modulo operator (returns remainder of division operation) can be used to check if a number is divisible by another number.  If x%y = 0, the remainder is zero, thus x is divisible by y. This can be used to check if a year is a leap year by checking the conditions given in the question (a and b).
+# If a year is divisible 4 it is a leap year
+# if a year is divisible by 4 and 100, it must also be divisible by 400 to be a leap year
+    otherwise, it is not a leap year
+
+
 ## Conditions
 ## a. The entered year must be divisible by 4
 ## b. But if it is also divisible by 100 then it should also be divisible by 400
@@ -100,6 +132,13 @@ else:
 '''
 
 # 4. Write a program that simulates the logic shown in the below flowchart
+
+# There are three decision points on the flowchart, meaning that a result will occur three times. set three different results to place-holder variables
+# For each decision point ask for user input and set to a variable
+# Write an if/elif/else for each decision point. If the decision results in a game over quit program. If anything other than the "if" statement is selected the outcome will be the result defined under the "else" statement.
+
+# Use f-strings to print decisions and results
+
 
 print("Welcome to Treasure Island. Your mission is to find the treasure")
 

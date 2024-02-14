@@ -106,7 +106,7 @@ elif user_move == "scissors":
 
 print(f"You Picked {user_move}. Computer picked {comp_move}. {result}")
 
-"""
+
 
 
 
@@ -149,3 +149,21 @@ elif door_opt == "blue":
 else:
     result3 = "Game Over."
     print(f"You chose {door_opt}. {result3}.")
+
+
+
+"""
+
+
+year = int(input("Enter a year to check if it is a leap year: "))
+
+if year%4 == 0:
+    if year%100 == 0:
+        if year%400 == 0:
+            print("Leap Year")
+        else:
+            print("Not Leap Year")
+    else:
+        print("Leap Year")
+else:
+    print("Not Leap Year")
