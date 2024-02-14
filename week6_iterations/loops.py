@@ -120,12 +120,24 @@ for i in reversed(range(1, rows + 1)):
 
 '''
 
+#### PRINT THE FOLLOWING
+
+
+#  5 4 3 2 1                i=  ║ j = (0,5)  ║   5 4 3 2 1      ║ prints ( , )
+#  4 3 2 1                  i=  ║ j = ( , )  ║   4 3 2 1        ║ prints ( , )
+#  3 2 1                    i=  ║ j = ( , )  ║   3 2 1          ║ prints ( , )
+#  2 1                                       ║   2 1            ║
+#  1                                         ║   1              ║
+
+
+
 rows = int(input("Enter the number of rows: "))
 
-for i in range(rows, 0, -1):
-    for j in range(i, 0, -1):
+for i in range(0, rows):
+    for j in range(rows-i, 0, -1):
         print(j, end=" ")
-    print()
+    print("")
+
 
 
 
