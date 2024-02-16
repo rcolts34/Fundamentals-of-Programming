@@ -22,7 +22,7 @@ if left_right == "left":
 else:
     result = "You Fell into a hole. Game Over."
 
-print(f"You chose to go {left_right}, then {swim_wait}, and went through the {door_opt} door. {result} ")
+print(f"You chose to go {left_right}, then {swim_wait}, and went through the {door_opt} door. {result}
 
 
 
