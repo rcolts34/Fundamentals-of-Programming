@@ -67,11 +67,9 @@ target_number = int(input(list1))
 
 highest_value = []
 
-for i in list1[1::1]:
-    for j in range(1, i + 1):
-        while highest_value == 0:
-            if j > highest_value:
-                j = highest_value
+for i in range(list1):
+        if j > highest_value:
+            j = highest_value
         if j < highest_value:
             break
 
