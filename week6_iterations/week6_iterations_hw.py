@@ -74,7 +74,9 @@ for num in range(1, len(list1), 2):
 
 """
 
-# 4. Find the highest number from a given list of numbers using for loop. Do not use any in-built functions
+
+### 4. Find the highest number from a given list of numbers using for loop. Do not use any in-built functions
+### Input :  10, 24, 8, 187, 34, 100
 
 # The program checks each value in the list and sets it equal to highest_value if it is higher than the current highest_value.
 # Because it is checking each value in the list, eventually the actual highest value in the list will remain equal to highest_value.
