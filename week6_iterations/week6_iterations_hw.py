@@ -1,9 +1,17 @@
 
 ###  1. Write a program to print a list of all prime numbers till a given target number
+###  Input :   10
 
 """
 
-target_num = int(input("Enter a number greater than 1: "))  (Input is 10)
+# Prime number is a whole number greater than 1 whose only factors are 1 and itself (divisible by only 1 and itself)
+# If input is less than or equal to 1, prompt user for number greater than 1 (prime number has to be greater than 1 by definition)
+# If input is 2, add to prime number list (2 is first prime number)
+# If input is any other number until the target_number, the program will check if it is prime
+    # The program checks if the target_number is prime by dividing the target_number by each number from 2 up until the target_number.  If the remainder equals zero, the target_number is not prime.
+    # Otherwise, it is prime, and is added to prime_list
+
+target_num = int(input("Enter a number greater than 1: "))
 
 prime_list = []
 
@@ -21,15 +29,17 @@ else:
         if isPrime is True:
             prime_list.append(num)
 
-
-
 print(prime_list)
 
 
 
 ### 2. Write a program to print a list of all even numbers till a given target number
+### Input:   10
 
-target_num = int(input("Enter a number: "))   (Input is 10)
+# The program checks if all nu
+
+
+target_num = int(input("Enter a number: "))
 
 even_list = []
 
@@ -42,13 +52,12 @@ for num in range(0, target_num+1):
     if isEven is True:
         even_list.append(num)
 
-print(even_list)
+    print(even_list)
 
 
 
 ### 3. Use a loop to display elements from a given list present at odd index positions.
-
-(Input is [10, 20, 30, 40, 50, 60])
+### Input :  [10, 20, 30, 40, 50, 60]
 
 
 list1 = [10, 20, 30, 40, 50, 60]
@@ -70,7 +79,9 @@ for num in list1:
     if num > highest_value:
         highest_value = num
 
-print(f'Highest Value: {highest_value}')
+print(highest_value)
+
+
 
 
 
