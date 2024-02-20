@@ -3,7 +3,7 @@
 
 """
 
-target_num = int(input("Enter a number greater than 1: "))
+target_num = int(input("Enter a number greater than 1: "))  (Input is 10)
 
 prime_list = []
 
@@ -29,7 +29,7 @@ print(prime_list)
 
 ### 2. Write a program to print a list of all even numbers till a given target number
 
-target_num = int(input("Enter a number: "))
+target_num = int(input("Enter a number: "))   (Input is 10)
 
 even_list = []
 
@@ -44,36 +44,33 @@ for num in range(0, target_num+1):
 
 print(even_list)
 
-[10, 20, 30, 40, 50, 60]
-
 
 
 ### 3. Use a loop to display elements from a given list present at odd index positions.
 
+(Input is [10, 20, 30, 40, 50, 60])
+
+
 list1 = [10, 20, 30, 40, 50, 60]
 
-for i in range(1, len(list1), 2):
-    print(list1[i])
+for num in range(1, len(list1), 2):
+    print(list1[num])
 
 
-range(1, len(list1)):
-list1[0:]:
+
 """
-# for i in range(1, len(list1)):
+
 # 4. Find the highest number from a given list of numbers using for loop. Do not use any in-built functions
 
 list1 = [10, 24, 8, 187, 34, 100]
-target_number = int(input(list1))
 
-highest_value = []
+highest_value = 0
 
-for i in range(list1):
-        if j > highest_value:
-            j = highest_value
-        if j < highest_value:
-            break
+for num in list1:
+    if num > highest_value:
+        highest_value = num
 
-print(highest_value)
+print(f'Highest Value: {highest_value}')
 
 
 
