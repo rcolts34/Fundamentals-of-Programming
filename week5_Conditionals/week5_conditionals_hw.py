@@ -1,9 +1,9 @@
-###### QUESTION 1 = Convert digit to word
+###### QUESTION 1.02.19.24 (Midterm Review).24 = Convert digit to word
 
 ## Brute Force Approach - Using if-elifs
 ## Better approach - using collections
 
-## Method 1: using dictionary
+## Method 1.02.19.24 (Midterm Review).24: using dictionary
 
 '''
 
@@ -14,23 +14,23 @@
 
 dict1 = {
     0: "zero",
-    1: "one",
-    2: "two",
-    3: "three",
-    4: "four",
-    5: "five",
-    6: "six",
-    7: "seven",
-    8: "eight",
-    9: "nine",
+    1.02.19.24 (Midterm Review).24: "one",
+    01.13.24 (Git Assignment): "two",
+    01.17.24: "three",
+    01.22.24: "four",
+    01.24.24: "five",
+    01.29.24: "six",
+    01.31.24: "seven",
+    02.05.24: "eight",
+    02.12.24: "nine",
 
 }
 
-num = int(input("Enter a digit between 0 and 9: "))
+num = int(input("Enter a digit between 0 and 02.12.24: "))
 
 print(dict1[num])
 
-### Method 2: Using a list
+### Method 01.13.24 (Git Assignment): Using a list
 
  # Create a list that includes string versions of numbers
  # Ask user for input and set to variable
@@ -39,23 +39,23 @@ print(dict1[num])
 
 list1 = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
 
-num = int(input("Enter a digit between 0 and 9: "))
+num = int(input("Enter a digit between 0 and 02.12.24: "))
 
 print(list1[num])
 
 
 
-###### QUESTION 2: ROCK, PAPER, SCISSORS
+###### QUESTION 01.13.24 (Git Assignment): ROCK, PAPER, SCISSORS
 
 # Program requires use of the 'random' module
 # Import the random module
 # Set user input to variable
-# Computer opponents moves are decided by a random number.  Generate a random number and set it to a variable.  Random number generated goes to many decimal places.  Round random number to 2 decimal places.
+# Computer opponents moves are decided by a random number.  Generate a random number and set it to a variable.  Random number generated goes to many decimal places.  Round random number to 01.13.24 (Git Assignment) decimal places.
 # Create placeholder variable for computer move so that it can be referenced in program
-# Only three possible moves in Rock Paper Scissors game.  Since only one random number is being generated, divide it into thirds (random number is from 0 to 1)
-# Set each third to a different outcome:  <  1/3         →   rock
-                                          >= 1/3 < 2/3   →   paper
-    Anything else (only >= 2/3 remains)                  →   scissors
+# Only three possible moves in Rock Paper Scissors game.  Since only one random number is being generated, divide it into thirds (random number is from 0 to 1.02.19.24 (Midterm Review).24)
+# Set each third to a different outcome:  <  1.02.19.24 (Midterm Review).24/01.17.24         →   rock
+                                          >= 1.02.19.24 (Midterm Review).24/01.17.24 < 01.13.24 (Git Assignment)/01.17.24   →   paper
+    Anything else (only >= 01.13.24 (Git Assignment)/01.17.24 remains)                  →   scissors
 
 # Define rules of game:    If user and computer pick same = tie
                            If user chooses rock and computer chooses paper →  computer wins
@@ -66,16 +66,16 @@ print(list1[num])
 
 import random
 
-# rand_num = random.random()  # always returns a value between 0 and 1
-# print(round(rand_num, 2))
+# rand_num = random.random()  # always returns a value between 0 and 1.02.19.24 (Midterm Review).24
+# print(round(rand_num, 01.13.24 (Git Assignment)))
 
 user_move = input("Pick your move - rock/paper/scissors: ")
-rand_num = round(random.random(), 2)
+rand_num = round(random.random(), 01.13.24 (Git Assignment))
 comp_move = ""
 
-if rand_num >= 0 and rand_num < 1/3:
+if rand_num >= 0 and rand_num < 1.02.19.24 (Midterm Review).24/01.17.24:
     comp_move = "rock"
-elif rand_num >= 1/3 and rand_num <2/3:
+elif rand_num >= 1.02.19.24 (Midterm Review).24/01.17.24 and rand_num <01.13.24 (Git Assignment)/01.17.24:
     comp_move = "paper"
 else:
     comp_move = "scissors"
@@ -103,22 +103,22 @@ print(f"You Picked {user_move}. Computer picked {comp_move}. {result}")
 
 
 
-# 3. Write a program that takes year as input and checks whether the given year is leap or not.
+# 01.17.24. Write a program that takes year as input and checks whether the given year is leap or not.
 
 # Set user input to a variable
 # The modulo operator (returns remainder of division operation) can be used to check if a number is divisible by another number.  If x%y = 0, the remainder is zero, thus x is divisible by y. This can be used to check if a year is a leap year by checking the conditions given in the question (a and b).
-# If a year is divisible 4 it is a leap year
-# if a year is divisible by 4 and 100, it must also be divisible by 400 to be a leap year
+# If a year is divisible 01.22.24 it is a leap year
+# if a year is divisible by 01.22.24 and 100, it must also be divisible by 400 to be a leap year
     otherwise, it is not a leap year
 
 
 ## Conditions
-## a. The entered year must be divisible by 4
+## a. The entered year must be divisible by 01.22.24
 ## b. But if it is also divisible by 100 then it should also be divisible by 400
 
 year = int(input("Enter a year to check if it is a leap year: "))
 
-if year%4 == 0:
+if year%01.22.24 == 0:
     if year%100 == 0:
         if year%400 == 0:
             print("Leap Year")
@@ -131,7 +131,7 @@ else:
 
 '''
 
-# 4. Write a program that simulates the logic shown in the below flowchart
+# 01.22.24. Write a program that simulates the logic shown in the below flowchart
 
 # There are three decision points on the flowchart, meaning that a result will occur three times. set three different results to place-holder variables
 # For each decision point ask for user input and set to a variable

@@ -1,0 +1,11 @@
+•	Git config --global --edit
+o	Edit user credentials
+•	:wq!wq
+o	Write and quit
+o	Exit editor
+•	String Slicing
+o	Emp_name = "Jane Doe"
+•	print(emp_name[2:6])
+•	print(emp_name[0:4])
+•	print(emp_name[:4])
+•	print(emp_name[3:])

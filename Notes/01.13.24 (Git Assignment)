@@ -1,0 +1,87 @@
+•	Download Community edition Pycharm
+•	Staging
+o	Git add "file name"
+o	Adding files to git via git add
+o	Can add multiple files at once
+•	Git add .
+	Recommend adding individual files at first
+•	Status
+o	Git status
+o	Check to see what files are set to commit to github
+•	Change directory
+o	Cd "directory"
+o	Ex: cd documents\git_repo1
+•	Commit
+o	Git commit -m "message"
+o	Commit to github
+•	Always add a message (describe what is changed)
+o	Gives a specific ID for commit
+•	Log
+o	Git log
+o	Shows a log of commits
+o	Git log --oneline
+•	Gives simpler version of commit history
+•	Gives first 7 chars of commit ID and commit message
+•	Diff
+o	Git diff "commit id #1" "commit id #2"git
+o	Shows difference between two commits
+•	Undo Changes
+o	Before staging
+•	Git checkout "filename"
+o	After staging
+•	Git reset HEAD "filename"
+•	Git checkout "filename"
+o	After commit
+•
+•	Branch
+o	Git branch
+•	Shows current Branch
+o	Git Branch "name"
+•	Creates new branch
+o	Git checkout "name"
+•	Switches Branch
+o	Git merge "name"
+•	Merges branch with current branch
+o	Git branch -d "name"
+•	Deletes branch
+•	Git remote add origin "repository name"
+o	Link github repository to git
+•	Git push origin "Branch"
+o	Push changes on Branch to GitHub repositorygit remote'g
+•	Git config credential.helper store
+o	Store credentials in token
+o	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
+•	Git pull origin "branch"
+o	Updates local repo from remote repo
+o	Always pull first, then start working
+•	Fetch
+o	Git fetch
+o	Shows what the latest changes are in the remote repo
+•	Git reset --hard "commit id"
+o	Resets to that id (removes all commits after that ID)
+o	Disadvantage of reset
+•	Lose commits
+•	Git revert head
+o	Have to give commit id
+•	Git push -f origin "branch"
+o	Forces update to remote repog
+•	Git Stash
+o	Save changes temporarily
+•	Git stash pop
+o	Remove changes
+•	Clone
+o	Get a copy of remote repository in local
+•	Bugfix → dev → main
+•	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
+•	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  →  Laptop
+
+•	Homework → Upload Website Project using Git / Github
+o	Git init
+o	Git status
+o	Git add test.py
+o	Git add.
+o	Git commit -m "message here"
+o	Git config credential.helper store
+o	Git push origin main
+•	Username <email>
+•	Password: personal access token

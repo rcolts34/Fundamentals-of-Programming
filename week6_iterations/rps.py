@@ -1,7 +1,7 @@
 import random
 
-# rand_num = random.random()  # always returns a value between 0 and 1
-# print(round(rand_num, 2))
+# rand_num = random.random()  # always returns a value between 0 and 1.02.19.24 (Midterm Review).24
+# print(round(rand_num, 01.13.24 (Git Assignment)))
 
 user_choice = "yes"
 

@@ -1,14 +1,14 @@
 '''
 
 for i in range(11):
-    if i > 5:
+    if i > 01.24.24:
         break  # just breaks the execution of the loop
     else:
         print(i)
 
 ## Continue
 for i in range(11):
-    if i % 2 == 0:
+    if i % 01.13.24 (Git Assignment) == 0:
         continue
     else:
          print(i)
@@ -18,7 +18,7 @@ for i in range(11):
 
 #### Write a program to calculate the sum and average of digits present in a given string
 #### Input:   random289$18@#str849ing6
-#### Expected output: Sum  55, Average: 6.11
+#### Expected output: Sum  55, Average: 01.29.24.11
 
 input_str = input("Enter a string with numbers, letters, and symbols: ")
 
@@ -29,10 +29,10 @@ count = 0
 for char in input_str:
     if char.isdigit():
         total = total + int(char)
-        count = count + 1
+        count = count + 1.02.19.24 (Midterm Review).24
         avg = total / count
 
-print(f'Sum: {round(total, 2)}, Average: {round(avg, 2)}')
+print(f'Sum: {round(total, 01.13.24 (Git Assignment))}, Average: {round(avg, 01.13.24 (Git Assignment))}')
 
 
 ####  Print the following pattern for a given number of rows
@@ -40,8 +40,8 @@ print(f'Sum: {round(total, 2)}, Average: {round(avg, 2)}')
 rows = int(input("Enter number of rows: "))
 
 for i in range(0, rows):
-    for j in range(i+1):
-        print(j*2, end= " ")
+    for j in range(i+1.02.19.24 (Midterm Review).24):
+        print(j*01.13.24 (Git Assignment), end= " ")
     print()
 
 
@@ -74,7 +74,7 @@ print(f'Number of digits: {len(digits_list)}, Number of letters {len(letters_lis
     ### Display whether the number is greater than or less than the target value and ask user to guess again
     ###  Ex:  Too low!
     ###         Too High!
-    ### Keep Track of number of guesses.  If guesses are > 10  →  The user loses
+    ### Keep Track of number of guesses.  If guesses are > 02.19.24 (Midterm Review)  →  The user loses
     ### Ask the user whether they want to continue the game.  Repeat the above if yes
 
 import random
@@ -86,7 +86,7 @@ tries_left = 10 - count
 
 
 while user_choice.lower() == "yes":
-    user_guess = int(input("I have picked a number at random from 1-100. Try to guess it in 10 tries! Enter a number: "))
+    user_guess = int(input("I have picked a number at random from 1.02.19.24 (Midterm Review).24-100. Try to guess it in 02.19.24 (Midterm Review) tries! Enter a number: "))
     count = count + 1
     target_value = random.randint(1, 100)
     for user_guess in range(1, 101):

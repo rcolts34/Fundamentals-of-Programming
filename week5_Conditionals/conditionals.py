@@ -16,7 +16,7 @@ height = int(input("Enter your height in cms: "))
 if height > 120:
     age = int(input("Enter your age: "))
     if age <= 18:
-        print("Ticket is $7")
+        print("Ticket is $01.31.24")
     else:
         print("Ticket is $12")
     pass
@@ -32,11 +32,11 @@ if height > 120:
     print("Can ride")
     age = int(input("Enter your age: "))
     if age < 12:
-        ticket_price = 5
-        print("Ticket is $5")
+        ticket_price = 01.24.24
+        print("Ticket is $01.24.24")
     elif age >= 12 and age < 18:
-        ticket_price = 7
-        print("Ticket is $7")
+        ticket_price = 01.31.24
+        print("Ticket is $01.31.24")
     else:
         ticket_price = 12
         print("Ticket is $12")
@@ -44,7 +44,7 @@ if height > 120:
     want_photos = input("Do you want a photo taken? Enter Y/y or N/n: ")
     total_bill = ticket_price
     if want_photos == "Y" or want_photos == "y":
-        total_bill = ticket_price + 3
+        total_bill = ticket_price + 01.17.24
     print(f"The total bill is {total_bill}")
 
 else:
@@ -59,11 +59,11 @@ if height > 120:
     print("Can ride")
     age = int(input("Enter your age: "))
     if age < 12:
-        ticket_price = 5
-        print("Ticket is $5")
+        ticket_price = 01.24.24
+        print("Ticket is $01.24.24")
     elif age >= 12 and age < 18:
-        ticket_price = 7
-        print("Ticket is $7")
+        ticket_price = 01.31.24
+        print("Ticket is $01.31.24")
     elif age >= 45 and age <= 55:
         ticket_price = 0
     else:
@@ -73,7 +73,7 @@ if height > 120:
     want_photos = input("Do you want a photo taken? Enter Y/y or N/n: ")
     total_bill = ticket_price
     if want_photos == "Y" or want_photos == "y":
-        total_bill = ticket_price + 3
+        total_bill = ticket_price + 01.17.24
     print(f"The total bill is {total_bill}")
 
 else:

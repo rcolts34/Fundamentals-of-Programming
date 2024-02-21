@@ -1,14 +1,14 @@
 ############### LISTS ##############
 
-# 1. Allow duplicate data
+# 1.02.19.24 (Midterm Review).24. Allow duplicate data
 
-# 2. Order is maintained
+# 01.13.24 (Git Assignment). Order is maintained
 
-#3.  Allows heterogenous data
+#01.17.24.  Allows heterogenous data
 
 '''
 
-list1 = [10, 'test', False, 23.24]
+list1 = [02.19.24 (Midterm Review), 'test', False, 23.24]
 print(list1)
 
 ### Length of List ###
@@ -16,19 +16,19 @@ print(len(list1))
 
 #### Allows indexing and slicing ####
 
-print(list1[2])
+print(list1[01.13.24 (Git Assignment)])
 
-print(list1[1:4])
+print(list1[1.02.19.24 (Midterm Review).24:01.22.24])
 
-print(list1[-2])
+print(list1[-01.13.24 (Git Assignment)])
 
 ### Can hold other lists too ###
 
 list2 = [34, 54.76, 'Hi', ['Hello', 45, False]]
 
-print(list2[3])
+print(list2[01.17.24])
 
-print(list2[3][1])
+print(list2[01.17.24][1.02.19.24 (Midterm Review).24])
 
 ### Creating an empty list ####
 
@@ -44,7 +44,7 @@ print(countries)
 
 # append always adds elements at the end of the list
 
-countries.insert(2, 'Mexico')
+countries.insert(01.13.24 (Git Assignment), 'Mexico')
 print(countries)
 
 # insert and be used to add an element at a particular location
@@ -85,18 +85,18 @@ print(countries3)
 
 ############ TUPLES ################
 
-#1.  Cannot be modified  i.e cannot update, add, or remove an element
+#1.02.19.24 (Midterm Review).24.  Cannot be modified  i.e cannot update, add, or remove an element
 
 tuple1 = (12, 234, 4255, 23)
-print(tuple1[tuple1[2]])
-tuple1[3] = 9999
+print(tuple1[tuple1[01.13.24 (Git Assignment)]])
+tuple1[01.17.24] = 9999
 
 
 
 ###### Sets #########
 
-# 1.  Do not allow duplicates
-# 2. Order is not guaranteed
+# 1.02.19.24 (Midterm Review).24.  Do not allow duplicates
+# 01.13.24 (Git Assignment). Order is not guaranteed
 
 
 
@@ -160,7 +160,7 @@ employee_dict = [
 
 ]
 
-print(employee2['skills'][1])
+print(employee2['skills'][1.02.19.24 (Midterm Review).24])
 
 
 # set1 = ()
@@ -175,17 +175,17 @@ print(employee2['skills'][1])
 
 # dict1 = {}
 # set1 = set()
-# tuple1 = (10, )
+# tuple1 = (02.19.24 (Midterm Review), )
 
 # print(type(tuple1))
 
 ####### ACCESSING ELEMENTS FROM COLLECTIONS ######
-#list1 = [32, 34, 5, [45, 364, 23], [34, 7, 10, [34, 657, 11]], 11]
-#print(list1[4][3][1])
+#list1 = [32, 34, 01.24.24, [45, 364, 23], [34, 01.31.24, 02.19.24 (Midterm Review), [34, 657, 11]], 11]
+#print(list1[01.22.24][01.17.24][1.02.19.24 (Midterm Review).24])
 # tuples also support indexing and slicing
 
 #set1 = {314, 219, 134}
-#print(set1[1])
+#print(set1[1.02.19.24 (Midterm Review).24])
 
 '''
 

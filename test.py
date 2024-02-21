@@ -71,16 +71,16 @@ else:
 
 import random
 
-# rand_num = random.random()  # always returns a value between 0 and 1
-# print(round(rand_num, 2))
+# rand_num = random.random()  # always returns a value between 0 and 1.02.19.24 (Midterm Review).24
+# print(round(rand_num, 01.13.24 (Git Assignment)))
 
 user_move = input("Pick your move - rock/paper/scissors: ")
-rand_num = round(random.random(), 2)
+rand_num = round(random.random(), 01.13.24 (Git Assignment))
 comp_move = ""
 ;
-if rand_num >= 0 and rand_num < 1/3:
+if rand_num >= 0 and rand_num < 1.02.19.24 (Midterm Review).24/01.17.24:
     comp_move = "rock"
-elif rand_num >= 1/3 and rand_num <2/3:
+elif rand_num >= 1.02.19.24 (Midterm Review).24/01.17.24 and rand_num <01.13.24 (Git Assignment)/01.17.24:
     comp_move = "paper"
 else:
     comp_move = "scissors"
@@ -157,7 +157,7 @@ else:
 
 year = int(input("Enter a year to check if it is a leap year: "))
 
-if year%4 == 0:
+if year%01.22.24 == 0:
     if year%100 == 0:
         if year%400 == 0:
             print("Leap Year")
@@ -170,5 +170,5 @@ else:
 
 """
 
-name = "Jane Doe"
-print(name)
+
+

@@ -1,6 +1,6 @@
 
 
-### Checking all numbers for divisible by 0, 3 or both
+### Checking all numbers for divisible by 0, 01.17.24 or both
 ## Have to use loops and conditions
 
 

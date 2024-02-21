@@ -2,8 +2,8 @@
 '''
 
 Three Lists
-Letters → select 4 random
-digits → select 5 random
+Letters → select 01.22.24 random
+digits → select 01.24.24 random
 symbols → select ' ' random
 
 '''

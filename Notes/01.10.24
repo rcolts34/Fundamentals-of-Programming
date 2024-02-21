@@ -1,0 +1,75 @@
+o	Repository
+•	First thing → Readme document
+o	Every push to commit should have a message
+o	Pull
+•	getting code
+o	Commit
+•	Records changes to one or more files in branch
+o	Push
+•	Act of sending or uploading code from a local source code branch to branch in remote
+o	Clone
+•	Copy the repository from a github to your local machine
+o	Merge
+•	Combine multiple sequences of commits into one unified history
+•	First Computer
+o	Charles Babbage
+•	1823 - Difference Engine
+	Up to 8 decimals
+•	Analytical Engine
+	Up to 50 decimals
+o	Ada Lovelace
+•	Assistant to Charles Babbage
+	Wrote first ever computer program
+•	Calculate Bernoulli numbers
+o	Recursion
+•	Method of solving a computational problem where the solution depends on solutions to smaller instances of the same problem
+•	Reusing same code
+	Factorials
+	Fibonacci series
+o	Punch Card
+•	Coding Sheets
+•	Keypunch operators to punch the cars
+•	Each statement needs a card
+	a=2
+	b=3
+	a+b
+
+o	Programming languages
+    •	Computer Languages
+    	Low Level Language
+        •	Machines Language
+        •	Binary
+        •	2+3
+        •	00000010   00101011  00000011
+    	Middle Level Language
+        •	Assembly Language
+        •	Translator or Assembler
+        •	Converts mnemonics into binary code
+        •	Use mnemonics
+        •	Add A B
+        •	Every platform has certain mnemonics
+        •	Platform → OS + processor
+        •	Intel 8085 → Add  → 1011
+        •	Intel 8086 → Plus→ 1001
+        •	CON
+        •	Platform dependent
+    	High Level Language
+        •	Use Interpreter , Compiler, or Both
+        •	    Those that use both → Hybrid Languages
+        •	Interpreter → Python
+            •	Takes one line at a time and converts to machine code (binary)
+            •	Doesn't check for syntax errors
+            •	If it finds an error, stops interpreting
+            •	1000 lines of code, error on 900th line, will stop
+            •	Fast if code is good
+        •	Compiler → C
+            •	Tries to convert entire code to machine code all at once
+            •	100 lines of code, error on 900th line, keeps going, makes an error list
+            •	Slower, but shows errors
+        •	Hybrid → Java
+            •	Until recently, one of most popular languages
+            •	.java
+            •	Have to install Java runtime environment (JRE) to run .java
+            •	When .java file is run , .class file class created, if no errors, machine code created and executed
+            •	.java → .class → machine code
+            •	English-like
