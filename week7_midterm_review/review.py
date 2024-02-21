@@ -44,7 +44,7 @@ for i in range(0, rows):
         print(j*2, end= " ")
     print()
 
-'''
+
 
 
 
@@ -66,3 +66,50 @@ for char in input_str:
         symbols_list.append(char)
 
 print(f'Number of digits: {len(digits_list)}, Number of letters {len(letters_list)}, Number of symbols: {len(symbols_list)}')
+
+'''
+
+#### Number Guessing Game ####
+    ### Choose a target value , ask the user to guess the value
+    ### Display whether the number is greater than or less than the target value and ask user to guess again
+    ###  Ex:  Too low!
+    ###         Too High!
+    ### Keep Track of number of guesses.  If guesses are > 10  →  The user loses
+    ### Ask the user whether they want to continue the game.  Repeat the above if yes
+
+import random
+
+user_choice = "yes"
+count = 0
+result = ""
+tries_left = 10 - count
+
+
+while user_choice.lower() == "yes":
+    user_guess = int(input("I have picked a number at random from 1-100. Try to guess it in 10 tries! Enter a number: "))
+    count = count + 1
+    target_value = random.randint(1, 100)
+    for user_guess in range(1, 101):
+        if user_guess == target_value and count <= 0:
+            result = "You Win!"
+            break
+        elif user_guess != target_value and count <= 0:
+            result = "Guess again"
+        elif count > 10:
+            result = "You lose!"
+    if count == 10:
+        result = "You lose. Play again? : "
+
+
+    print(f'You picked {user_guess}. Computer picked {target_value}. {result}.  {count}.')
+
+
+
+
+
+
+
+
+
+
+
