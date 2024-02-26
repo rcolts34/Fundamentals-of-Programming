@@ -78,30 +78,28 @@ print(f'Number of digits: {len(digits_list)}, Number of letters {len(letters_lis
     ### Ask the user whether they want to continue the game.  Repeat the above if yes
 
 import random
-
+target_value = random.randint(1, 100,)
 user_choice = "yes"
 count = 0
 result = ""
-tries_left = 10 - count
 
+while user_choice == "yes":
+    print('target_value: ', target_value)
+    user_guess = int(input("I have picked a number at random from 1-100. Try to guess it in 10 tries! Enter a number: "))
+    if count > 10:
+        print("too many tries. you lose")
+        count = 0
+        user_choice = input("Do you want to continue playing?: ")
+    if user_guess == target_value:
+        print("you win!!")
+        count = 0
+        user_choice = input("Do you want to continue playing?: ")
+    elif user_guess != target_value:
+        print(f"Try again. You have {10 - count} tries ")
+        user_guess = int(input("Enter your new guess: "))
+        count = count + 1
+        continue
 
-while user_choice.lower() == "yes":
-    user_guess = int(input("I have picked a number at random from 1.02.19.24 (Midterm Review).24-100. Try to guess it in 02.19.24 (Midterm Review) tries! Enter a number: "))
-    count = count + 1
-    target_value = random.randint(1, 100)
-    for user_guess in range(1, 101):
-        if user_guess == target_value and count <= 0:
-            result = "You Win!"
-            break
-        elif user_guess != target_value and count <= 0:
-            result = "Guess again"
-        elif count > 10:
-            result = "You lose!"
-    if count == 10:
-        result = "You lose. Play again? : "
-
-
-    print(f'You picked {user_guess}. Computer picked {target_value}. {result}.  {count}.')
 
 
 
