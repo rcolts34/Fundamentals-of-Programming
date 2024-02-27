@@ -84,7 +84,6 @@ count = 0
 result = ""
 
 while user_choice == "yes":
-    print('target_value: ', target_value)
     user_guess = int(input("I have picked a number at random from 1-100. Try to guess it in 10 tries! Enter a number: "))
     if count > 10:
         print("too many tries. you lose")
