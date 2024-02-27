@@ -1,5 +1,5 @@
 
-
+'''
 
 # 1 Using a while loop, print odd numbers until a given target number
 
@@ -12,7 +12,7 @@ while x < 10:
 
 # 2 Using a for loop, remove all "apple elements from the below list and print the final list
 
-'''
+
 
 fruits_list = ["banana", "orange", "apple", "kiwi", "apple", "apple", "grapes"]
 
@@ -46,13 +46,31 @@ else:
 
 print(f'You picked {user_move}, Computer picked {comp_move} - {result}.')
 
-
+'''
 
 # 4 Write a program that prints the multiples of 5 from the given list with the following conditions
 
+    # a.	Continue with the next iteration of the loop if value is greater than 150
+    # b.	Break the loop if the value is greater than 500
+    # c.	Otherwise, print the item if it is divisible by 5.
 
 
+list1 = [12, 75, 150, 180, 145, 525, 50]
 
+for num in list1:
+    if num >= 150 and num % 5 == 0:
+        print(num)
+    elif num >= 500:
+        break
+
+for i in list1:
+    if i > 500:
+        break
+    elif i > 150:
+        continue
+    else:
+        if i % 5 == 0:
+            print(i)
 
 
 # 5 Create the Below Pattern
@@ -67,4 +85,3 @@ for i in range(0, rows+1):
         print(j, end=" ")
     print("")
 
-'''
