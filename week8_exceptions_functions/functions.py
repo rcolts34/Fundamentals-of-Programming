@@ -1,6 +1,6 @@
+'''
 
-
-Functions - reusable blocks of code
+# Functions - reusable blocks of code
 
 # Write a function to check whether a number is even or not
 
@@ -15,11 +15,11 @@ def checkEven(num):
     return result
 
 ### Making a function call
-print(checkEven(4))  # 4  →  function arguments
-print(checkEven(9))
-
-is_even = checkEven(311658115319861619689)
-print(is_even)
+# print(checkEven(4))  # 4  →  function arguments
+# print(checkEven(9))
+#
+# is_even = checkEven(311658115319861619689)
+# print(is_even)
 
 # def print("Hello")   # does not have any return type
 # import random
@@ -35,7 +35,7 @@ print(is_even)
 #          → takes two parameters
     # Ex : life / file ,
 
-'''
+
 
 ### 1. Write a program to check whether a word is a palindrome
 
@@ -115,7 +115,7 @@ print(is_anagram("astronomer", "moonstarer"))
 # print(is_anagram("listen", "silent"))
 
 
-'''
+
 
 ### 3. Write a function to that takes user name, birth year, budget, price of the product as inputs and performs the following operations.
 
@@ -128,28 +128,55 @@ print(is_anagram("astronomer", "moonstarer"))
 ## take inputs, see what errors might occur
 ##
 
-def user_info("str1", int1, int2, int3):
-    print(input("Enter your name: "))
-    print(int(input("Enter your birth year: ")))
-    print(int(input("Enter your budget: ")))
-    print(int(input("Enter the price of the product: ")))
-    current_age = 2024 - int1
-    amount = int2 / int3
+def user_info(str1, int1, int2, int3):
+    result = ""
+    name = str1
+    dob = int1
+    budget = int2
+    price = int3
+    result = f"Hello {name}! You are {2024-dob} years old and you can buy {round(budget/price)} products"
+    return result
+    
+user_info('steve', 1975, 400, 75)
+print(result)
+
+result = user_info('steve', 1975, 400, 75)
+print(result)
+print(user_info('steve', 1975, 400, 75))
 
 
-print(user_info("bob", 1988, 5000, 45))
-# result = user_info("bob", 1988, 5000, 45)
-# print(result)
+'''
 
-print(user_info(result))
-print(user_info(str1, int1, int2, int3))
+def user_info(name, dob, budget, price):
+    result = ""
+    name = input("Enter your name: ")
+    dob = int(input("Enter your birth year: "))
+    budget = int(input("Enter your budget: "))
+    price = int(input("Enter the price of the product: "))
+    result = f"Hello {name}! You are {2024-dob} years old and you can buy {round(budget/price)} products"
+
+
+user_info("", "", "", "")
+print(user_info)
+
+### 4. Write a program to check whether we can create a triangle or not.
+
+# Given three sticks, you may be able to arrange them into a triangle.  Ex: Sticks - 12" , 1", 1" - Cannot make a triangle.
+# If any of the 3 lengths is > than the sum of the other 2, you cannot form a triangle. Otherwise, you can.
+# If the sum of the two lengths equals the third, they from a "degenerate" triangle".
+# Write a function named is_triangle that takes three int arguments, and prints yes or no depending on whether or not you can form a triangle with given lengths.
+
+def is_triangle(length1, length2, length3):
+    length1 = ""
+    length2 = ""
+    length3 = ""
 
 
 
-str1 = input("Enter your name: ")
-int1 = int(input("Enter your birth year: "))
-int2 = int(input("Enter your budget: "))
-int3 = int(input("Enter the price of the product: "))
+
+
+
+
 
 
 
