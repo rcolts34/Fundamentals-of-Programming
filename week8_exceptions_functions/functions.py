@@ -107,8 +107,8 @@ print(is_anagram("astronomer", "moonstarer"))
 #         return "Anagrams"
 #     else:
 #         return "Not Anagrams"
-# 
-# 
+#
+#
 # result = is_anagram("life", "file")
 # print(result)
 # 
@@ -137,7 +137,7 @@ def user_info(str1, int1, int2, int3):
     result = f"Hello {name}! You are {2024-dob} years old and you can buy {round(budget/price)} products"
     return result
     
-user_info('steve', 1975, 400, 75)
+result = user_info('steve', 1975, 400, 75)
 print(result)
 
 result = user_info('steve', 1975, 400, 75)
@@ -145,19 +145,20 @@ print(result)
 print(user_info('steve', 1975, 400, 75))
 
 
-'''
 
-def user_info(name, dob, budget, price):
-    result = ""
+
+def user_info():
     name = input("Enter your name: ")
     dob = int(input("Enter your birth year: "))
     budget = int(input("Enter your budget: "))
     price = int(input("Enter the price of the product: "))
     result = f"Hello {name}! You are {2024-dob} years old and you can buy {round(budget/price)} products"
+    return result
+
+print(user_info())
 
 
-user_info("", "", "", "")
-print(user_info)
+
 
 ### 4. Write a program to check whether we can create a triangle or not.
 
@@ -166,10 +167,30 @@ print(user_info)
 # If the sum of the two lengths equals the third, they from a "degenerate" triangle".
 # Write a function named is_triangle that takes three int arguments, and prints yes or no depending on whether or not you can form a triangle with given lengths.
 
-def is_triangle(length1, length2, length3):
-    length1 = ""
-    length2 = ""
-    length3 = ""
+def is_triangle(stick1, stick2, stick3):
+    result = ""
+    if (stick1 + stick2) < stick3:
+        result = "no"
+    elif (stick1 + stick3) < stick2:
+        result = "no"
+    elif (stick2 + stick3) < stick1:
+        result = "no"
+    else:
+        result = "yes"
+    return result
+
+result = is_triangle(7, 10, 5)
+print(result)
+result = is_triangle(30, 20, 24)
+print(result)
+result = is_triangle(1, 1, 3)
+print(result)
+result = is_triangle(6, 3, 2)
+print(result)
+
+'''
+
+
 
 
 

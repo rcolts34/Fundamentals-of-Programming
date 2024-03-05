@@ -71,7 +71,7 @@ def findFactorial(num):
         return 1
     else:
         return num * findFactorial(num-1)
-factorial_value = findFactorial(996)
+factorial_value = findFactorial(4)
 print(factorial_value)
 
 '''
@@ -82,5 +82,15 @@ print(factorial_value)
 
 # Fibonacciseries(5)
 # Prints → 11235
-# Fibonacciseries(5)
+# Fibonacciseries(6)
 # Prints → 112358
+# Fibonacci →
+
+def fibSeries(num):
+    if (num <= 0):
+        print("Please provide a positive number: ")
+        return
+    else:
+        return num - fibSeries(num)
+ = fibSeries(2)
+print(result)
