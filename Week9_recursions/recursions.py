@@ -63,18 +63,23 @@ test2(3)
 
 # 5 x 4 !
 
-def findFactorial(num):
-    if (num < 0):
-        print("Please provide a positive number: ")
-        return
-    elif (num <= 1):
-        return 1
-    else:
-        return num * findFactorial(num-1)
-factorial_value = findFactorial(4)
-print(factorial_value)
-
 '''
+
+# 1000! → 1000 x 999! →  999! x 998! → .......!0
+# if you are making that many recursive calls, it is not the place to use recursion
+
+# def findFactorial(num):
+#     if (num < 0):
+#         print("Please provide a positive number: ")
+#         return
+#     elif (num <= 1):
+#         return 1
+#     else:
+#         return num * findFactorial(num-1)
+# factorial_value = findFactorial(1000)
+# print(factorial_value)
+
+
 
 ### Fibonacci Series
 # Every number is the sum of the previous two numbers (starting from third number)
@@ -86,13 +91,86 @@ print(factorial_value)
 # Prints → 112358
 # Fibonacci →
 
-def fibSeries(num):
-    if (num <= 0):
-        print("Please provide a positive number: ")
-        return
+# Reuse the code provided, add explaination
+# Create quicksort.py file
+# Add quicksort.py and recursion.py to archive and upload for Homework
+# Due on Friday
+# Classes may be online, watch email
+
+def fibSeries(n):
+     list1 = []
+     for i in range(n):
+         if i > 0:
+             list1.append(i)
+             list1_sum = sum(list1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Quick sort
+#     1. Fine the median value
+#     2. Create 3 lists
+#         a. First list → has all the values < median value
+#             →  median([list1[0], list1[len(list1)/2], list1[[-1]]])
+#             →  median([31, 92, 28]) = 31
+#         b. Second list → has all the values = median value
+#        ||     < 31 →  [18, 18, 3, 11, 28]   |  = 31  → [31]     |  > 31  →  [72, 79, 92, 44, 56, 41]  ||
+#         c. Third list → has all the values > median value
+#             →  median(18, 3, 28) = 18
+#        ||     < 18 →  [3, 11]               |  = 18 → [18, 18]  |  > 18  →  [28]                      ||
+#             →  median(3, 11, 11) = 11
+#        ||     < 11 → [3]                    |
+#     3. Repeat step 1 and step 2 for first and third lists until there is only one element left in each list
+#                         [72, 79, 92, 44, 56, 41]
+#             →  median([72, 44, 41]) = 44
+#        ||     < 44 → [41]                   | → = 44 [44]       |  > 44  → [72]
+
+
+
+
+
+#### Quick Sort
+
+    # 1. Find the median value
+    # 2. Create 3 lists
+    #     a. First list → has all the values < median value
+    #     b. Second list → has all the values = median value
+    #     c. Third list → has all the values > median value
+    # 3. Repeat step 1 and step 2 for first and third lists until there is only one element left in each list
+
+num_list = [31, 18, 72, 79, 3, 18, 92, 11, 44, 56, 41, 28]
+
+import statistics
+def quickSort(num_list):
+    if len(num_list) <= 1:
+        return num_list
     else:
-        return num - fibSeries(num)
- = fibSeries(2)
-print(result)
+        median_value = statistics.median([num_list[0], num_list[len(num_list)//2], num_list[-1]])
+        left_list = []
+        middle_list = []
+        right_list = []
+    for i in num_list:
+        if i < median_value:
+            left_list.append(i)
+        elif i > median_value:
+            right_list.append(i)
+        else:
+            middle_list.append(i)
+    return(quickSort(left_list) + middle_list + quickSort(right_list))
+
+sorted_list = quickSort(num_list)
+print(sorted_list)
+
+# sorted_list = quickSort([31, 18, 72, 79, 3, 18, 92, 11, 44, 56, 41, 28])
+# print(sorted_list)
 
 
