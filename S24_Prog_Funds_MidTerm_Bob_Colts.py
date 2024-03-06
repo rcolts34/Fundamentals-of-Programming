@@ -5,10 +5,9 @@
 
 x = 0
 while x < 10:
-    x += 1
     if x % 2 != 0:
         print(x)
-
+    x += 1
 
 # 2 Using a for loop, remove all "apple elements from the below list and print the final list
 
@@ -75,13 +74,23 @@ for i in list1:
 
 # 5 Create the Below Pattern
 
-rows = int(input("Enter the number of rows: "))
-count = 0
+# rows = int(input("Enter the number of rows: "))
+# count = 0
+#
+# for i in range(0, rows+1):
+#     count = count + 1
+#     for j in range(1, i + count):
+#         if j % 2 != 0:
+#         print(j, end=" ")
+#     print("")
 
-for i in range(0, rows+1):
-    count = count + 1
-    for j in range(1, i + count):
-        if j % 2 != 0:
-        print(j, end=" ")
+rows = int(input("Enter the number of rows: "))
+
+for i in range(0, rows):
+    for j in range(0, i + 1):
+        print(j*2, end=" ")
     print("")
+
+
+
 

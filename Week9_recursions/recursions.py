@@ -94,3 +94,5 @@ def fibSeries(num):
         return num - fibSeries(num)
  = fibSeries(2)
 print(result)
+
+
