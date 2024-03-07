@@ -1,18 +1,17 @@
-'''
-
 # Functions - reusable blocks of code
 
 # Write a function to check whether a number is even or not
 
 # num →  function parameter
 # function definition ↓
-def checkEven(num):
-    result = ""
-    if num % 2 == 0:
-        result = True
-    else:
-        result = False
-    return result
+
+# def checkEven(num):
+#     result = ""
+#     if num % 2 == 0:
+#         result = True
+#     else:
+#         result = False
+#     return result
 
 ### Making a function call
 # print(checkEven(4))  # 4  →  function arguments
@@ -26,7 +25,6 @@ def checkEven(num):
 # randNum = random.random()    # returns a number
 
 
-
 # For Homework
 # Palindrome → write a program to check whether a word is a palindrome
 #             → takes one string
@@ -34,7 +32,6 @@ def checkEven(num):
 # Anagrams → write a program to chck whether a word is an anagram
 #          → takes two parameters
     # Ex : life / file ,
-
 
 
 ### 1. Write a program to check whether a word is a palindrome
@@ -94,10 +91,7 @@ print(is_anagram("astronomer", "moonstarer"))
 # b. Calculates the number of products that can be bought based on budget and price per product. Round down the number of products.
 # c. Displays the message as shown in sample output
 # d. Identify the potential exceptions and structure your code using try, except(s), else, and finally blocks
-
-## Try except , else, finally
-## take inputs, see what errors might occur
-
+        # Potential exceptions:  Division by zero, ValueError, both from user inputs
 
 
 def user_info():
@@ -121,7 +115,7 @@ def user_info():
 
 print(user_info())
 
-'''
+
 
 ### 4. Write a program to check whether we can create a triangle or not.
 
