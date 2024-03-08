@@ -45,7 +45,7 @@ except Exception as e:
 else:
     print(result) # else block code would run only if there are no errors thrown form the try block
 
-finally: # used for the code that needs to be excecuted no matter what
+finally: # used for the code that needs to be executed no matter what
     print("connections closed")
 print("End")
 
@@ -53,7 +53,7 @@ print("End")
 
 
 
-    # Critcal statement
+    # Critical statement
     # print(a/b) # syntactically correct but incorrect logic wise so the error would be thrown only when running the program
 
 # range is for when you don't already have a list.

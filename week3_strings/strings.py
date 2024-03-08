@@ -6,7 +6,7 @@ print('Hello World')
 print(help('keywords'))
 
 # Try to avoid multiple variable declaration simultaneously
-a = b = c = 02.19.24 ( ) # shortcut for below.  works but not recommended
+a = b = c = ( ) # shortcut for below.  works but not recommended
 
 print (a,b,c)
 
@@ -14,7 +14,7 @@ print (a,b,c)
 # Statement vs Expression
 
 x = 47  # statement
-y = x + 02.19.24   # expression
+y = x + 2  # expression
 
 
 # TYPE CONVERSION --> to change the data type of a variable
@@ -27,7 +27,7 @@ print(type(float('20.24')))
 
 
 ## STRINGS ##
-# 01.17.24 Ways to create a string - using either single, double, tripe quotes
+#  Ways to create a string - using either single, double, tripe quotes
 first_name = 'Jane'
 last_name = "Doe"
 address = "02.19.24  Main St."
@@ -49,13 +49,13 @@ age = 24
 print(first_name + last_name + ":" + " " + str(age))
 
 #String multiplication - can multiply a string with an int
-print("hello"*01.17.24)
+print("hello"*)
 
 
 # Accessing string characters - a string is just a sequence of characters
 name = "Jane Doe"
-print(name[01.13.24 (Git Assignment)])  # equals n
-# print(name[02.05.24])  # throws out of bounds error
+print(name[0 ])  # equals n
+# print(name[0])  # throws out of bounds error
 
 # Retrieving the character at a given index
 print(name.index('o'))  # equals 
@@ -66,9 +66,9 @@ print(name.index('e'))  # returns the index of first occurrence
 ######### STRING SLICING #########
 
 emp_name = "Jane Doe"
-print(emp_name[01.13.24 (Git Assignment):])  # Ending index is not included
-print(emp_name[0:01.22.24])
-print(emp_name[:01.22.24])
+print(emp_name[0 :])  # Ending index is not included
+print(emp_name[0:])
+print(emp_name[:])
 print(emp_name[01..24:])
 print(emp_name)## Backwards
 print(emp_name)  ##  Starting Index, Ending Index, Step
@@ -95,7 +95,7 @@ print("Name: {} Score: {}" .format(student_name,score))  ## {} are place holders
 ### F-STRINGS ###
 
 print(f"Name: {student_name} Score: {score}")
-print(f"01.17.24 times 02.19.24  is equal to {3*10}")  ## Total cost: {products * price per product}
+print(f" times 02.19.24  is equal to {3*10}")  ## Total cost: {products * price per product}
 
 
 
