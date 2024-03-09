@@ -122,16 +122,27 @@ print(factorial_value)
 
 #### USING RECURSION
 
+    ## recurFibo
+
+    # If logic →  If n is less than or equal to one, one will be returned.  The first two numbers of the fibonacci sequence are 1.
+    # else logic → Each subsequent number in the sequence is found by adding the two numbers preceding it (or the n-1 and n-2 numbers).  These two numbers are added and returned.
+
 def recurFibo(n):
     if n <= 1:
         return n
     else:
-        return(recurFibo(n-1) +recurFibo(n-2))
+        return(recurFibo(n-1) + recurFibo(n-2))
 
-def fibSeries (nterms):
+    ## fibSeries
+
+    # If / else → if nterms is less than or equal to 0, print the Please enter a positive integer, else, print Fibonacci sequence.  The function will be printed up to nterms numbers, thus a negative  number does not work.
+    # for logic → iterates from 1 to nterms, at each iteration recurFibo(i) function is called, which will compute and print the fibonacci number.
+        #
+
+def fibSeries(nterms):
     # check if the number of terms is valid
     if nterms <= 0:
-        pri;nt("Please enter a positive integer.")
+        print("Please enter a positive integer.")
     else:
         print("Fibonacci sequence")
     for i in range(1, nterms+1):
@@ -142,9 +153,11 @@ print()
 
 '''
 
-
-
 #### USING LOOPS
+
+    #  If logic →  If n is less than or equal to one, one will be returned.  The first two numbers of the fibonacci sequence are 1.
+    #  elif / else logic → the first two numbers are 1 in the sequence, so 1 is returned if num is one.  If num is 2, two ones are returned.  The function is using lists and slicing to create the sequence, so starting out this way gurantees that the list being appended to will start off the same every time.
+    #  for logic → the function iterates from 3 up to num, the next term is calculated as the sum of the two preceding terms, and is appended to fib_list.
 
 def fibonacciSeries(num):
     if num <= 0:
@@ -160,6 +173,7 @@ def fibonacciSeries(num):
             fib_list.append(fib_list[i-1] + fib_list[i-2])
         return fib_list
 print(fibonacciSeries(30))
+
 
 
 

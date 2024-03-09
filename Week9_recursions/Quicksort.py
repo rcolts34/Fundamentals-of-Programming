@@ -130,6 +130,13 @@ sorted_list = [3, 11, 18, 18, 28, 31, 41, 44, 56, 72, 79, 92]
     #     c. Third list → has all the values > median value
     # 3. Repeat step 1 and step 2 for first and third lists until there is only one element left in each list
 
+    ## The statistics module is imported for median calculation
+    ## for logic → If the length of the list is less than or equal to 1, the list is returned because it is already sorted
+    ## else logic → the median is calculated using the first middle and last members of a list
+    ## 3 lists are initialized for use for later
+
+
+
 num_list = [31, 18, 72, 79, 3, 18, 92, 11, 44, 56, 41, 28]
 
 import statistics
