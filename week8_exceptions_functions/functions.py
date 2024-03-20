@@ -1,3 +1,6 @@
+
+'''
+
 # Functions - reusable blocks of code
 
 # Write a function to check whether a number is even or not
@@ -32,6 +35,8 @@
 # Anagrams → write a program to chck whether a word is an anagram
 #          → takes two parameters
     # Ex : life / file ,
+
+
 
 
 ### 1. Write a program to check whether a word is a palindrome
@@ -109,7 +114,7 @@ def user_info():
     except Exception as e:
         print("Something went wrong -", e)
     else:
-        print("From else: ", result)
+        print("From else: -", e result)
     finally:
         return result
 
@@ -132,14 +137,19 @@ print(user_info())
     # Else logic → The only other possible outcome is that the longest stick is longer than the sum of the two smaller sticks.  In this case, no, a triangle cannot be made.
     # The function is called, and printed.  Parameters must be entered (sticks 1-3 length).
 
+'''
 
 def is_triangle(stick1, stick2, stick3):
     sticks = [stick1, stick2, stick3]
     sticks_sorted = sorted(sticks)
 
     if sum(sticks_sorted[0:2]) >= sticks_sorted[2]:
+        print(sticks_sorted[0:2])
+        print(sticks_sorted[2])
         return "Yes"
     else:
+        print(sticks_sorted[0:2])
+        print(sticks_sorted[2])
         return "No"
 
 print(is_triangle(7, 10, 5))

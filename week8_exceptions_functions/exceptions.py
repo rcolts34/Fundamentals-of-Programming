@@ -51,15 +51,12 @@ print("End")
 
 '''
 
-
-
     # Critical statement
     # print(a/b) # syntactically correct but incorrect logic wise so the error would be thrown only when running the program
 
 # range is for when you don't already have a list.
 
 numbers = [1, 2, 3, 4, 0, 5, 6]
-
 
 for num in numbers:
     try:

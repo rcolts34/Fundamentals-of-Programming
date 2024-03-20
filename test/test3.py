@@ -1,20 +1,18 @@
-import statistics
-def quickSort(num_list):
-    if len(num_list) <= 1:
-        return num_list
+def user_info(name, dob, budget, price):
+    try:
+        result = ""
+        name = input("Enter your name: ")
+        dob = int(input("Enter your birth year: "))
+        budget = int(input("Enter your budget: "))
+        price = int(input("Enter the price of the product: "))
+        result = f"Hello {name}! You are {2024-dob} years old and you can buy {round(budget/price)} products."
+    except ValueError as e:
+        print("Something went wrong - ", e)
+    except ZeroDivisionError as e:
+        print("Something went wrong - ", e)
+    except Exception as e:
+        print("Something went wrong - ", e)
     else:
-        median_value = statistics.median([num_list[0], num_list[len(num_list)//2], num_list[-1]])
-        left_list = []
-        middle_list = []
-        right_list = []
-    for i in num_list:
-        if i < median_value:
-            left_list.append(i)
-        elif i > median_value:
-            right_list.append(i)
-        else:
-            middle_list.append(i)
-    return(quickSort(left_list) + middle_list + quickSort(right_list))
+        return(result)
 
-sorted_list = quickSort(num_list)
-print(sorted_list)
+print(user_info("","","",""))
