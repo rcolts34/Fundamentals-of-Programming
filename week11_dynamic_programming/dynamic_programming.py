@@ -150,6 +150,8 @@ i = element position
     - STR2: G T T C C T A A T A
         →  GTTTAA, TTTAA, TTAA, CTAATA  →  length is 6
 
+    - Git uses LCS to keep track of differences between commits, files, changes, etc
+
 ═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
 ## Recursive Solution
