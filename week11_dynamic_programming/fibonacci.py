@@ -70,24 +70,24 @@ for num in [5, 10, 15, 20, 25, 30, 35, 40]:
 
 '''
 
-## Using Loops - Iterative Solution
-
-ite_call_count = 0
-
-
-def fib_val_ite(req_fib_num):
-    global ite_call_count
-    ite_call_count += 1
-    if req_fib_num <= 1:
-        return 1
-    else:
-        fib_list = [1, 1]
-        for i in range(2, req_fib_num):
-            fib_list.append(fib_list[i-1] + fib_list[i-2])
-    return fib_list[-1]
-
-print(fib_val_ite(50))
-print(ite_call_count)
+# ## Using Loops - Iterative Solution
+#
+# ite_call_count = 0
+#
+#
+# def fib_val_ite(req_fib_num):
+#     global ite_call_count
+#     ite_call_count += 1
+#     if req_fib_num <= 1:
+#         return 1
+#     else:
+#         fib_list = [1, 1]
+#         for i in range(2, req_fib_num):
+#             fib_list.append(fib_list[i-1] + fib_list[i-2])
+#     return fib_list[-1]
+#
+# print(fib_val_ite(50))
+# print(ite_call_count)
 
 #### Tabulation Solution
 
