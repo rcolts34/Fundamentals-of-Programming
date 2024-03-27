@@ -2,7 +2,11 @@
 '''
 
 #### Recursion
-    ## Calls: 30582
+
+    # Recursion is used to find the Longest Common Subsequence
+    # This is the least efficient method
+        # Calls: 30582
+
 
 def lcs_rec(A, B, i, j):
     global calls
@@ -25,14 +29,17 @@ str2 = "GTTCCTAATA"
 str1 = str1 + "\0"
 str2 = str2 + "\0"
 
-
 lcs_char = lcs_rec(A=str1, B=str2, i=0, j=0)
 print(lcs_char)
 print(F"Recursion calls: {calls}")
 
 
 #### Memoization
-    ## Calls: 147
+
+    # Memoization is used to find the Longest Common Subsequence
+    # This is far more efficient than the Recursion method
+        # Calls: 147
+
 
 def lcs_memoization(A, B, i, j):
     global lcs_memo, calls
@@ -67,8 +74,11 @@ print(f"Memoization calls: {calls}")
 '''
 
 
-#### Tabulation  → Calls
-    ## Calls = 1
+#### Tabulation
+
+    # Tabulation is used to find the Longest Common Subsequence
+    # This is by far the most efficient method
+        # Calls: 1
 
 def find_lcs(x, y):
     global calls
@@ -88,7 +98,6 @@ def find_lcs(x, y):
                 lcs_array[row][col] = max(lcs_array[row-1][col], lcs_array[row][col - 1])
 
     for row1 in lcs_array:
-       '{:>15}'.format('row1')
         print(row1)
     return lcs_array[row][col]
 
@@ -100,18 +109,4 @@ print(f'LCS Length: {find_lcs(str1,str2)}')
 print(f"Tabulation calls: {calls}")
 
 
-   [                                 ]
-   [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-    [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
-    [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-    [0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2]
-    [0, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3]
-    [0, 1, 2, 2, 2, 2, 2, 3, 3, 3, 4]
-    [0, 1, 2, 2, 2, 2, 2, 3, 4, 4, 4]
-    [0, 1, 2, 3, 3, 3, 3, 3, 4, 5, 5]
-    [0, 1, 2, 3, 3, 3, 4, 4, 4, 5, 5]
-    [0, 1, 2, 3, 3, 3, 4, 4, 4, 5, 5]
-    [0, 1, 2, 3, 3, 3, 4, 5, 5, 5, 6]
-    [0, 1, 2, 3, 3, 3, 4, 5, 5, 5, 6]
-    [0, 1, 2, 3, 3, 3, 4, 5, 6, 6, 6]
-   [                                 ]
+
