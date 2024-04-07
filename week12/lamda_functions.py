@@ -76,7 +76,6 @@ print(list(lengths))
 
 '''
 
-
     ## Reduce
         ## Used to obtain a single value from a given list
             ## Calculating one value from a given list
