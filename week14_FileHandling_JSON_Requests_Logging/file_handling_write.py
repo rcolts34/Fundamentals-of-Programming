@@ -1,5 +1,3 @@
-
-
 # with open('write_test.text', 'w') as file_obj:
 #     file_obj.write('Writing')
 

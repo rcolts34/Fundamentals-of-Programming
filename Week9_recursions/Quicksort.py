@@ -147,7 +147,7 @@ def quickSort(num_list):
         median_value = statistics.median([num_list[0], num_list[len(num_list)//2], num_list[-1]])
         left_list = []
         middle_list = []
-        right_list = []
+        right_list = [];
     for i in num_list:
         if i < median_value:
             left_list.append(i)

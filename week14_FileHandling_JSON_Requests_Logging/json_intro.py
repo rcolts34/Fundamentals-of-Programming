@@ -1,5 +1,3 @@
-
-
 ### JSON  →  Java script object notation
 
 # emp_data = '''

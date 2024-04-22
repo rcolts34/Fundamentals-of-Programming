@@ -8,11 +8,11 @@
 #       →  write - create a new file and include some new data
 #       →  append - add to already existing content
 #     default mode is read
-#     once you open a file you must excplicitly close it
+#     once you open a file you must explicitly close it
 
 
 
-file_obj = open('sample_text', 'r')
+file_obj = open('sample_text','r')
 print(file_obj.name)
 print(file_obj.mode)
 file_obj.close()
@@ -25,7 +25,7 @@ file_obj.close()
     #   →  tries to load everything into memory in one shot
     #   →  for loop gives you control over what is accessed
 
-with open('sample_text', 'r') as file_obj:
+# with open('sample_text', 'r') as file_obj:
     # print(file_obj.name)
     # # print('Inside with the open: ', file_obj.closed)
     # file_contents = file_obj.read()
@@ -45,7 +45,7 @@ with open('sample_text', 'r') as file_obj:
     # file_content = file_obj.readline()
     # print(file_content)
 
-    size_to_read = 100
+    # size_to_read = 100
 
     # file_contents = file_obj.read(size_to_read)
     # print(file_contents)
@@ -61,6 +61,8 @@ with open('sample_text', 'r') as file_obj:
 
     # When there are no more characters to return, read will return an empty string
 
+with open('sample_text', 'r') as file_obj:
+    size_to_read = 100
     file_contents = file_obj.read(size_to_read)
     while len(file_contents) > 0:
         print(file_contents, end='*')

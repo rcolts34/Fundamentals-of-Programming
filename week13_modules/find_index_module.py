@@ -1,5 +1,5 @@
 
-['apple', 'oranges', 'kiwi', 'mango']
+# ['apple', 'oranges', 'kiwi', 'mango']
 if __name__ == '__main__':
     print('Imported find index module')
     test_var = 'Test String'
@@ -10,12 +10,12 @@ def find_index(search_list, target_val):
     for idx, val in enumerate(search_list):
         # print(idx, val)
         if val == target_val:
-            return idx
+            return idx, val
     return -1
 
 
 
-# print(find_index(['apple', 'oranges', 'kiwi', 'mango'], 'purple'))
+# print(find_index(['apple', 'oranges', 'kiwi', 'mango'], 'oranges'))
 
 
 # when file is run directly

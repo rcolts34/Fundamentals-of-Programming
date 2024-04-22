@@ -41,7 +41,29 @@ import random
 # print(fim.test_var)
 
 # To import only specific things
+# from find_index_module import find_index as fim
+# req_idx = fim(['apple', 'oranges', 'kiwi', 'mango'], 'mango')
+# print(req_idx)
+# print('Running modules intro: ', __name__)
+
+# import find_index_module as fim
+# req_idx = fim.find_index(['apple', 'oranges', 'kiwi', 'mango'], 'mango')
+# print(req_idx)
+# print(fim.test_var)
+
+# To Import Only Specific Things
+
+# from find_index_module import find_index
+# req_idx = find_index(['apple', 'oranges', 'kiwi', 'mango'], 'mango')
+# print(req_idx)
+
+
+# __name__  →  dunder variable → double underscore
+    # stops imported code from running in the background
+
+
 from find_index_module import find_index as fi
 req_idx = fi(['apple', 'oranges', 'kiwi', 'mango'], 'mango')
 print(req_idx)
 print('Running modules intro: ', __name__)
+

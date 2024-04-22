@@ -21,8 +21,8 @@ def find_lcs(x, y):
         print(row1)
     return lcs_array[row][col]
 
-str1 = "stone"
-str2 = "longest"
+str1 = "DDACDFA"
+str2 = "DAFCAA"
 print(find_lcs(str1,str2))
 
 

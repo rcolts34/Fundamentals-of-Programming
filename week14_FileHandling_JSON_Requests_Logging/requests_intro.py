@@ -1,5 +1,3 @@
-
-
 from urllib.request import urlopen
 import json
 with urlopen("https://dummyjson.com/users") as response:
